@@ -142,14 +142,6 @@ function Navbar() {
                     </li>
                 </ul>
             </nav>
-
-            <main>
-                <h1>Lorem ipsum dolor sit.</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta, autem?
-                </p>
-            </main>
         </div>
     );
 }
