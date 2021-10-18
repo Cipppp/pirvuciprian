@@ -9,8 +9,7 @@ function App() {
         <Router>
             <Navbar />
             <Switch>
-                {/* <Route path="/" exact component={Home} /> */}
-                <h1 className="text-red-400">hello</h1>
+                <Route path="/" exact component={Home} />
             </Switch>
         </Router>
     );

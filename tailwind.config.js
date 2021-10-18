@@ -1,7 +1,16 @@
 module.exports = {
     mode: 'jit',
-    purge: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
+    purge: [
+        './public/**/*.html',
+        './src/**/*.{js,jsx,ts,tsx,vue}',
+        './src/components/**/*.{js,jsx,ts,tsx,vue}',
+    ],
     theme: {
+        extend: {
+            colors: {
+                background: '#8AD8FA',
+            },
+        },
         screens: {
             sm: '640px',
             md: '768px',
