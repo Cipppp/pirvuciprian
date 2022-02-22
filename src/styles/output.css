@@ -599,25 +599,28 @@ video {
   --tw-shadow: 0 0 #0000;
 }
 
-.row-span-1 {
-  grid-row: span 1 / span 1;
-}
-
 .row-span-2 {
   grid-row: span 2 / span 2;
+}
+
+.row-span-1 {
+  grid-row: span 1 / span 1;
 }
 
 .m-auto {
   margin: auto;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+.m-2 {
+  margin: 0.5rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
+.mr-20 {
+  margin-right: 5rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
 }
 
 .block {
@@ -640,12 +643,16 @@ video {
   height: 100vh;
 }
 
-.w-6 {
-  width: 1.5rem;
+.h-full {
+  height: 100%;
 }
 
-.w-40 {
-  width: 10rem;
+.w-screen {
+  width: 100vw;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-full {
@@ -668,16 +675,24 @@ video {
   width: 4rem;
 }
 
-.cursor-pointer {
-  cursor: pointer;
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+.flex-col {
+  flex-direction: column;
 }
 
 .place-items-center {
@@ -688,13 +703,24 @@ video {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
 
-.bg-background {
-  --tw-bg-opacity: 1;
-  background-color: rgba(138, 216, 250, var(--tw-bg-opacity));
+.justify-items-center {
+  justify-items: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-2 {
@@ -703,6 +729,10 @@ video {
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-4 {
@@ -724,21 +754,40 @@ video {
   padding-right: 0.5rem;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
 .text-center {
   text-align: center;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.shadow-card {
+  --tw-shadow: 1px 6px 23px 9px rgba(0,0,0,0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg {
