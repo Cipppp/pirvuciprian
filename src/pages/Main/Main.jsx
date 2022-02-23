@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/output.css';
-import { Home, Services, Stack } from '../index.js';
+import { Home, Projects, Services, Stack } from '../index.js';
 
 function Main() {
     return (
@@ -8,6 +8,7 @@ function Main() {
             <Home />
             <Services />
             <Stack />
+            <Projects />
         </>
     );
 }
