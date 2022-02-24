@@ -46,7 +46,7 @@ function Home() {
                             />
                         </svg>
                     </div>
-                    <div className="twitter p-3">
+                    <div className="twitter p-2">
                         <svg
                             className="w-6"
                             viewBox="0 0 32 32"

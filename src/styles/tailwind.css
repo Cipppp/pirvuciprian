@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-auth-with {
+    @apply rounded-full pr-2 pl-2 mt-4 font-bold tracking-wider transition ease-out duration-300 border-[#2A2E35] border-solid border-4 w-auto flex items-center bg-[#2A2E35] text-white;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
+import { Footer } from '../../components';
 import '../../styles/output.css';
-import { Home, Projects, Services, Stack } from '../index.js';
+import { Contact, Home, Projects, Services, Stack } from '../index.js';
 
 function Main() {
     return (
@@ -9,6 +10,8 @@ function Main() {
             <Services />
             <Stack />
             <Projects />
+            <Contact />
+            <Footer />
         </>
     );
 }

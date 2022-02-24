@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles/output.css';
 import './App.css';
 import { Navbar } from './components';
