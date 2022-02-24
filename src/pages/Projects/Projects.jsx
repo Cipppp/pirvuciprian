@@ -6,7 +6,10 @@ import './Projects.css';
 
 function Projects() {
     return (
-        <div className="p-10 h-screen flex flex-col w-screen items-center justify-items-center ">
+        <div
+            className="p-10 h-screen flex flex-col w-screen items-center justify-items-center"
+            id="projects"
+        >
             <div className="block overflow-hidden">
                 <h1 className="flex text-4xl font-black justify-center">
                     Projects

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Services() {
     return (
-        <div className="p-10 h-screen flex flex-col w-screen">
+        <div className="p-10 h-screen flex flex-col w-screen" id="services">
             <div className="block overflow-hidden">
                 <h1 className="flex text-4xl font-black justify-center">
                     Services

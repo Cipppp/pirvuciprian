@@ -2,7 +2,7 @@ import React from 'react';
 
 function Stack() {
     return (
-        <div className="p-10 h-screen flex flex-col w-screen">
+        <div className="p-10 h-screen flex flex-col w-screen" id="stack">
             <div className="block overflow-hidden">
                 <h1 className="flex text-4xl font-black justify-center">
                     Stack I use

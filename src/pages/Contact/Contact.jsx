@@ -2,9 +2,13 @@ import React from 'react';
 import doodle from '../../assets/doodle.svg';
 
 function Contact() {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    };
+
     return (
         <>
-            <div class="content grid grid-cols-2">
+            <div class="grid grid-cols-2" id="contact">
                 <div className="left-section items-center justify-center ">
                     <div className="p-20 ml-20">
                         <svg
@@ -134,12 +138,11 @@ function Contact() {
                             </p>
                         </div>
                     </div>
-                    <form action="" className="row-span-2">
+                    <form onSubmit={handleSubmit} className="row-span-2">
                         <div className="grid grid-rows-2 grid-cols-2">
                             <div className="m-2">
                                 <input
                                     type="text"
-                                    autoFocus
                                     placeholder="First name"
                                     required
                                     className="bg-form w-full p-3 placeholder-[#2a2e35c7] focus:outline-none focus:border-snow rounded-full  border-2 border-[#2A2E35]"
@@ -148,7 +151,6 @@ function Contact() {
                             <div className="m-2">
                                 <input
                                     type="text"
-                                    autoFocus
                                     placeholder="Last name"
                                     required
                                     className="bg-form w-full p-3 placeholder-[#2a2e35c7]  focus:outline-none focus:border-snow rounded-full  border-2 border-[#2A2E35]"
@@ -157,7 +159,6 @@ function Contact() {
                             <div className="m-2">
                                 <input
                                     type="text"
-                                    autoFocus
                                     placeholder="Phone"
                                     required
                                     className="bg-form w-full p-3 placeholder-[#2a2e35c7]  focus:outline-none focus:border-snow rounded-full  border-2 border-[#2A2E35]"
@@ -166,7 +167,6 @@ function Contact() {
                             <div className="m-2">
                                 <input
                                     type="text"
-                                    autoFocus
                                     placeholder="Email"
                                     required
                                     className="bg-form w-full p-3 placeholder-[#2a2e35c7]  focus:outline-none focus:border-snow rounded-full  border-2 border-[#2A2E35]"
@@ -180,7 +180,10 @@ function Contact() {
                             ></textarea>
                         </div>
                         <div className="flex justify-center items-center">
-                            <button className="btn-auth-with focus:outline-none p-2 hover:bg-white hover:text-[#2A2E35]">
+                            <button
+                                type="submit"
+                                className="btn-auth-with focus:outline-none p-2 hover:bg-white hover:text-[#2A2E35]"
+                            >
                                 Send
                             </button>
                         </div>

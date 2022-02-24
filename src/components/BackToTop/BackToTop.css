@@ -1,0 +1,12 @@
+#top_button {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: display 0s, opacity 0.5s linear;
+}

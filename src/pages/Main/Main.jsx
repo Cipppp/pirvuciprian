@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer } from '../../components';
+import { BackToTop, Footer } from '../../components';
 import '../../styles/output.css';
 import { Contact, Home, Projects, Services, Stack } from '../index.js';
 
@@ -11,6 +11,7 @@ function Main() {
             <Stack />
             <Projects />
             <Contact />
+            <BackToTop />
             <Footer />
         </>
     );
