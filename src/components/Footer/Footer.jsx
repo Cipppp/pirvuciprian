@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -113,7 +114,14 @@ function Footer() {
                     <hr className="border-dashed border-t-2 w-[60%] rounded-t-xl  border-[#929CA9] rounded-xl opacity-40" />
                 </div>{' '}
                 <div className="flex justify-center my-2">
-                    <p className="text-[#0ACF83]">Privacy Terms</p>
+                    <p className="text-[#0ACF83]">
+                        <Link to="/privacy-policy" className="cursor-pointer">
+                            Privacy
+                        </Link>{' '}
+                        <Link to="/terms" className="cursor-pointer">
+                            Terms
+                        </Link>
+                    </p>
                 </div>
                 <div className="flex items-center justify-center">
                     <hr className="border-dashed border-t-2 w-[60%] rounded-t-xl  border-[#929CA9] rounded-xl opacity-40" />

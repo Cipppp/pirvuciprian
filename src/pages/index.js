@@ -4,3 +4,5 @@ export { default as Main } from './Main/Main';
 export { default as Services } from './Services/Services';
 export { default as Stack } from './Stack/Stack';
 export { default as Projects } from './Projects/Projects';
+export { default as Privacy } from './Privacy/Privacy';
+export { default as Terms } from './Terms/Terms';
