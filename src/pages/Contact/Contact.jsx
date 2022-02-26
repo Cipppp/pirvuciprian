@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import doodle from '../../assets/doodle.svg';
 import { db } from '../../firebase';
 import { collection, addDoc } from 'firebase/firestore';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 function Contact() {
     const [firstName, setFirstName] = useState('');
@@ -9,6 +11,21 @@ function Contact() {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
+    const customId = 'b6d2a12c-088a-43f4-911b-bf82e7497854';
+
+    const notify = (message) => {
+        toast.success(message, {
+            toastId: customId,
+            position: 'top-center',
+            closeButton: false,
+            hideProgressBar: true,
+            closeOnClick: true,
+            draggablePercent: 50,
+            pauseOnHover: false,
+            draggable: true,
+            theme: 'colored',
+        });
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -22,6 +39,7 @@ function Contact() {
                 message,
             });
             console.log('Document written with ID: ', docRef.id);
+            notify('Message sent successfully!');
         } catch (e) {
             console.error('Error adding document: ', e);
         }
