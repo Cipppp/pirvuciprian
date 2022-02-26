@@ -1,9 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import doodle from '../../assets/doodle.svg';
+import { db } from '../../firebase';
+import { collection, addDoc } from 'firebase/firestore';
 
 function Contact() {
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
+
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        try {
+            const docRef = addDoc(collection(db, 'users'), {
+                firstName,
+                lastName,
+                email,
+                phone,
+                message,
+            });
+            console.log('Document written with ID: ', docRef.id);
+        } catch (e) {
+            console.error('Error adding document: ', e);
+        }
+
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
     };
 
     return (
@@ -145,6 +172,10 @@ function Contact() {
                                     type="text"
                                     placeholder="First name"
                                     required
+                                    value={firstName}
+                                    onChange={(e) =>
+                                        setFirstName(e.target.value)
+                                    }
                                     className="bg-form w-full p-3 placeholder-[#2a2e35c7] focus:outline-none focus:border-snow rounded-full  border-2 border-[#2A2E35]"
                                 />
                             </div>
@@ -153,6 +184,10 @@ function Contact() {
                                     type="text"
                                     placeholder="Last name"
                                     required
+                                    value={lastName}
+                                    onChange={(e) =>
+                                        setLastName(e.target.value)
+                                    }
                                     className="bg-form w-full p-3 placeholder-[#2a2e35c7]  focus:outline-none focus:border-snow rounded-full  border-2 border-[#2A2E35]"
                                 />
                             </div>
@@ -161,6 +196,8 @@ function Contact() {
                                     type="text"
                                     placeholder="Phone"
                                     required
+                                    value={phone}
+                                    onChange={(e) => setPhone(e.target.value)}
                                     className="bg-form w-full p-3 placeholder-[#2a2e35c7]  focus:outline-none focus:border-snow rounded-full  border-2 border-[#2A2E35]"
                                 />
                             </div>
@@ -169,6 +206,8 @@ function Contact() {
                                     type="text"
                                     placeholder="Email"
                                     required
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                     className="bg-form w-full p-3 placeholder-[#2a2e35c7]  focus:outline-none focus:border-snow rounded-full  border-2 border-[#2A2E35]"
                                 />
                             </div>
@@ -176,6 +215,8 @@ function Contact() {
                         <div className="overflow-hidden">
                             <textarea
                                 placeholder="Message"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
                                 className="w-full h-full resize-none p-6 placeholder-[#2a2e35c7]  focus:outline-none focus:border-snow rounded-full  border-2 border-[#2A2E35]"
                             ></textarea>
                         </div>
