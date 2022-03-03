@@ -3,18 +3,18 @@ import './styles/output.css';
 import './App.css';
 import { Navbar } from './components';
 import { Main, Privacy, Terms } from './pages';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/pirvuciprian">
             <Navbar />
-            <Switch>
+            <Routes>
                 <Route path="/" exact component={Main} />
                 <Route path="/privacy-policy" exact component={Privacy} />
                 <Route path="/terms" exact component={Terms} />
-            </Switch>
+            </Routes>
 
             <ToastContainer
                 style={{
