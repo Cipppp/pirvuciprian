@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM, { BrowserRouter } from 'react-dom';
+import ReactDOM, { HashRouter } from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <HashRouter basename={process.env.PUBLIC_URL}>
             <App />
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>,
     document.getElementById('root')
 );
