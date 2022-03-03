@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/pirvuciprian/static/css/main.7659c8c1.chunk.css",
+    "main.js": "/pirvuciprian/static/js/main.c7fb6cc5.chunk.js",
+    "main.js.map": "/pirvuciprian/static/js/main.c7fb6cc5.chunk.js.map",
+    "runtime~main.js": "/pirvuciprian/static/js/runtime~main.24f7cebc.js",
+    "runtime~main.js.map": "/pirvuciprian/static/js/runtime~main.24f7cebc.js.map",
+    "static/css/2.b8803beb.chunk.css": "/pirvuciprian/static/css/2.b8803beb.chunk.css",
+    "static/js/2.58b89927.chunk.js": "/pirvuciprian/static/js/2.58b89927.chunk.js",
+    "static/js/2.58b89927.chunk.js.map": "/pirvuciprian/static/js/2.58b89927.chunk.js.map",
+    "static/js/3.d144f80f.chunk.js": "/pirvuciprian/static/js/3.d144f80f.chunk.js",
+    "static/js/3.d144f80f.chunk.js.map": "/pirvuciprian/static/js/3.d144f80f.chunk.js.map",
+    "index.html": "/pirvuciprian/index.html",
+    "precache-manifest.68bb39ca7f79ddddf5d00befc29795eb.js": "/pirvuciprian/precache-manifest.68bb39ca7f79ddddf5d00befc29795eb.js",
+    "service-worker.js": "/pirvuciprian/service-worker.js",
+    "static/css/2.b8803beb.chunk.css.map": "/pirvuciprian/static/css/2.b8803beb.chunk.css.map",
+    "static/css/main.7659c8c1.chunk.css.map": "/pirvuciprian/static/css/main.7659c8c1.chunk.css.map",
+    "static/media/doodle.svg": "/pirvuciprian/static/media/doodle.39bd102a.svg",
+    "static/media/project1.png": "/pirvuciprian/static/media/project1.f61b2ee1.png",
+    "static/media/project2.png": "/pirvuciprian/static/media/project2.f19e4fe6.png",
+    "static/media/project3.png": "/pirvuciprian/static/media/project3.05631a99.png"
+  }
+}
