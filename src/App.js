@@ -11,9 +11,9 @@ function App() {
         <Router basename="/pirvuciprian">
             <Navbar />
             <Routes>
-                <Route path="/" exact component={Main} />
-                <Route path="/privacy-policy" exact component={Privacy} />
-                <Route path="/terms" exact component={Terms} />
+                <Route path="/" element={<Main />} />
+                <Route path="/privacy-policy" exact component={<Privacy />} />
+                <Route path="/terms" exact component={<Terms />} />
             </Routes>
 
             <ToastContainer
