@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "309dba24a7a78493178736a4388b4fb1",
+    "revision": "87ee47f1fa16d98dd12318a6296656ce",
     "url": "/pirvuciprian/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pirvuciprian/static/css/2.b8803beb.chunk.css"
   },
   {
-    "revision": "e7d8f75ee7afda0f1ba0",
+    "revision": "e0fd7945b26612a45f87",
     "url": "/pirvuciprian/static/css/main.7659c8c1.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pirvuciprian/static/js/3.bbb4e748.chunk.js"
   },
   {
-    "revision": "e7d8f75ee7afda0f1ba0",
-    "url": "/pirvuciprian/static/js/main.420168f1.chunk.js"
+    "revision": "e0fd7945b26612a45f87",
+    "url": "/pirvuciprian/static/js/main.dd11df51.chunk.js"
   },
   {
     "revision": "e8a6f16b6e6d3eda10ca",
