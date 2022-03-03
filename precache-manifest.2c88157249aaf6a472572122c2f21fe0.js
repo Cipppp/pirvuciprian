@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2fce93f2c86aba1074b123c2631db713",
+    "revision": "38752233d63e8e9facdabe3a94dfb2ee",
     "url": "/pirvuciprian/index.html"
   },
   {
-    "revision": "eb9d0b1c53cf3776984a",
+    "revision": "3e8d9a8a450e89f73379",
     "url": "/pirvuciprian/static/css/2.b8803beb.chunk.css"
   },
   {
-    "revision": "0140329dfb97ca042b8a",
+    "revision": "77a8c7f185e9a89fe4dd",
     "url": "/pirvuciprian/static/css/main.7659c8c1.chunk.css"
   },
   {
-    "revision": "eb9d0b1c53cf3776984a",
-    "url": "/pirvuciprian/static/js/2.2a125bca.chunk.js"
+    "revision": "3e8d9a8a450e89f73379",
+    "url": "/pirvuciprian/static/js/2.0f09fb3d.chunk.js"
   },
   {
-    "revision": "a69c5be555bd23c54e00",
-    "url": "/pirvuciprian/static/js/3.d144f80f.chunk.js"
+    "revision": "f9278dda0014302ab613",
+    "url": "/pirvuciprian/static/js/3.bbb4e748.chunk.js"
   },
   {
-    "revision": "0140329dfb97ca042b8a",
-    "url": "/pirvuciprian/static/js/main.5b515150.chunk.js"
+    "revision": "77a8c7f185e9a89fe4dd",
+    "url": "/pirvuciprian/static/js/main.a07f8b6c.chunk.js"
   },
   {
-    "revision": "770562d354348b34265b",
-    "url": "/pirvuciprian/static/js/runtime~main.24f7cebc.js"
+    "revision": "e8a6f16b6e6d3eda10ca",
+    "url": "/pirvuciprian/static/js/runtime~main.fb6c5a5d.js"
   },
   {
     "revision": "39bd102a108f160d868019252303e752",
