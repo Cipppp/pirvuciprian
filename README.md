@@ -163,7 +163,7 @@ Project Link: [https://github.com/Cipppp/pirvuciprian](https://github.com/Cipppp
 
 ## Acknowledgments
 
-Here is a list with resources I find helpful and I would like to give credit to..
+Here is a list with resources I find helpful and I would like to give credit to.
 
 -   [Choose an Open Source License](https://choosealicense.com)
 -   [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
