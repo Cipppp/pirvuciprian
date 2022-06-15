@@ -4,6 +4,7 @@ import { db } from '../../firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
+import { useCallback, useEffect } from 'react/cjs/react.production.min';
 
 function Contact() {
     const [firstName, setFirstName] = useState('');
@@ -13,7 +14,7 @@ function Contact() {
     const [message, setMessage] = useState('');
     const customId = 'b6d2a12c-088a-43f4-911b-bf82e7497854';
 
-    const notify = (message) => {
+    const notify = useCallback((message) => {
         toast.success(message, {
             toastId: customId,
             position: 'top-center',
@@ -25,7 +26,7 @@ function Contact() {
             draggable: true,
             theme: 'colored',
         });
-    };
+    }, []);
 
     const handleSubmit = (e) => {
         e.preventDefault();
