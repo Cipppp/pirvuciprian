@@ -48,6 +48,7 @@ function Services() {
                             </span>
                         </div>
                     </div>
+
                     {/* Card  2*/}
                     <div className="m-2 card shadow-card w-[20rem] h-[20rem] py-6 grid grid-rows-3 justify-center items-center">
                         <div className="skill row-span-2 p-4 grid grid-rows-2 place-items-center">
